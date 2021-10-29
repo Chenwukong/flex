@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body,html{
+  
+    height:100%;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 9500px;
+}
+.left{
+    z-index: 0;
+    background-color: rgb(11,72,107);
+    width: 290px;
+    height: 100%;
+}
+.left .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 703px;
+}
+.left>.nav>ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.left>.nav>ul>li:nth-of-type(1){
+    margin-top: 30px; 
+    margin-bottom: 30px;
+}
+.left>.nav>ul>li:nth-of-type(n+2){
+    margin-bottom: 15px;
+}
+.left>.nav>ul>li:last-of-type{
+    display: flex;
+    align-items: flex-end;
+    width: 284px;
+    height: 56px;
+}
+.left .nav ul li a{
+  margin-left: 65px;
+  height: 22px;
+  color: #9BCEB4;
+  font: 16px "PingFang SC";
+}
+.left .nav ul li h2{
+    margin-left: 35px;
+    color: white;
+    font: 23.2px "PingFang SC";
+}
+
+.left .nav ul li div{
+   margin-left:65px;
+  align-items: flex-end;
+}
+.left .nav ul li div img{
+    cursor: pointer;
+    margin-right: 25px;
+    width: 24px;
+    height: 24px;
+}
+.mid{
+    height: 100%;
+    width: 10px;
+    background-color: rgb(59,134,134);
+}
+.ball{
+    position: fixed;
+    transition: 1s;
+    left: 265px;
+    top: 10px;
+    z-index: 0;
+    width: 64px;
+    height: 64px;
+    background: radial-gradient(#CFF09E 35%, rgb(59,134,134) 35%);
+    border-radius: 50%;
+}
+.right{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 1605px;
+    height: 100%;
+    background-color: rgb(207,240,158);
+}
+.right .top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.right .top h1{
+    margin:16px 0px 21.44px 16px;
+    font-weight: 400;
+}
+.right .top button{
+    cursor: pointer;
+    width: 122px;
+    height: 32px;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 8px 10px;
+    font-size: 16px;
+    color: #3B8686;
+    background-color: rgb(207,240,158);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+#display .graph{
+    display: flex;
+    flex-direction: column;
+}
+#display .graph ul{
+    display: flex;
+    width: 1046px;
+    height: 60px;
+    border: 1px dotted ;
+    font-size: 50px;
+    text-align: center;
+}
+.graph ul li{
+ 
+    width: 58px;
+    height: 58px;
+    color: rgb(44,107,121);
+    background-color: rgb(121,189,154);
+    text-align: center;
+    margin-left: 3px;
+    font-size: 50px;
+}
+#flex-direction .graph ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 4px;
+    height: 95%;
+    border: 1px dotted;
+}
+#flex-direction .graph li{
+
+    height: 100%;
+
+}
+#flex-wrap .graph ul{
+    display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+#flex-wrap .graph ul li{
+    width: 40%;
+}
+#flex-flow .graph ul{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+}
+#flex-flow .graph ul li{
+    width: 40%;
+    height: 40%;
+}
+
+#order .graph ul{
+    display: flex;
+}
+#order .graph ul li:nth-of-type(3){
+    order:0
+}
+
+#justify-content ul{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+#justify-content ul li{
+    height: 100%;
+}
+
+#align-items ul{
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#align-self ul{
+    display: flex;
+    height: 100%;
+}
+#align-self ul li{
+    height: 100%;
+}
+#align-self ul li:nth-of-type(3){
+    align-self: flex-start !; 
+    height: 58px;
+}
+
+#align-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+}
+#align-content ul li{
+    width: 30%;
+}
+#flex-grow ul{
+    display: flex;
+    height: 100%;
+}
+#flex-grow ul li:nth-of-type(3){
+    flex-grow: 1;
+}
+#flex-shrink ul{
+    display: flex;
+    height: 100%;
+}
+#flex-shrink ul li{
+    width: 40%;
+}
+#flex-shrink ul li:nth-of-type(3){
+    flex-shrink: 1;
+}
+#flex-basis ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+}
+#flex-basis ul li:nth-of-type(3){
+    flex-basis: 30%;
+}
+section>div{
+     display: flex;
+     flex-direction: column;
+     justify-content:space-around;
+    line-height: 50px;
+    border-bottom: 1px dotted ;
+    padding: 32px 32px;
+}
+section>div:last-of-type{
+    border-bottom: none;
+}
+section h2{
+    font-size: 24px;
+    color: #3B8686;
+    font-weight: 400;
+}
+section a{
+   color: #0B486B;
+}
+.seleButton{
+   margin-top: 6px;
+}
+.seleButton button{
+    padding: 4.8px 11.2px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #3B8686;
+    color: #A8DBA8;
+    cursor: pointer;
+}
+.seleButton .current{
+    background-color: rgb(11,72,107);
+    color: #CFF09E;
+}
+.example {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.example .graph{
+    width: 1066px;
+    height: 250px;
+    border: 2px solid #000;
+}
+.example .code{
+    width: 461px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgb(168,219,168);
+}
+.words{
+    color: #072f46;
+    width: 1550px;
+
+}
