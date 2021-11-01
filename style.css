@@ -22,8 +22,8 @@ body,html{
     position: fixed;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 703px;
+    min-width: 300px;
+    height: 100%;
 }
 .left>.nav>ul{
     display: flex;
