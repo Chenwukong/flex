@@ -15,7 +15,7 @@ body,html{
 .left{
     z-index: 0;
     background-color: rgb(11,72,107);
-    min-width: 290px;
+    min-width: 270px;
     min-height: 100%;
 }
 .left .nav{
@@ -73,7 +73,7 @@ body,html{
 .ball{
     position: fixed;
     transition: 1s;
-    left: 265px;
+    left: 250px;
     top: 10px;
     z-index: 0;
     width: 64px;
